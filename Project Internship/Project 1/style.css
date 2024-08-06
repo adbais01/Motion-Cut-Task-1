@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(168, 203, 247); /* Sky blue background */
+    color: rgb(225, 78, 156);
+    
+}
+
+.search-container {
+    display: flex;
+    width: 600px; /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    border-radius: 24px; /* Rounded corners */
+    overflow: hidden;
+    background-color: white;
+    color: rgb(225, 78, 156);
+}
+
+.dropdown {
+    width: 40%;  
+    font-size: 16px;
+    border-radius: 24px;
+    background-color:rgb(225, 78, 156);
+    outline: none;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+       
+}
+.dropdown option {
+    background-color: #f0f0f0; /* Background color of the dropdown options */
+    color:black; /* Text color of the dropdown options */
+    padding: 10px; /* Add padding to create space within options */
+    margin: 5px 0;
+    position: absolute;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 50px;
+}
+
+/* Optional: Change the background color of the selected option */
+.dropdown option:checked {
+    background-color: #d0d0d0; /* Background color of the selected option */
+}
+
+
+.search-bar {
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: rgb(225, 78, 156);
+    
+}
+
+.search-button {
+    width: 10%; /* Adjust the width as needed */
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: rgb(225, 78, 156);
+}
+
+.dropdown.show .dropdown-toggle {
+    background-color: rgb(225, 78, 156); /* Change the color when dropdown is open */
+}
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+.search-bar::placeholder {
+    color: rgb(225, 78, 156); /* Set the placeholder color to gray */
+}
+
